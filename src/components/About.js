@@ -15,7 +15,8 @@ const About = () => {
   return (
     <section  id='about' ref={ref}>
       <div className='container mx-auto '>
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-38 h-screen'>
+
           {/* img */}
           {/* <motion.div 
           variants={fadeIn('right', 0.3)}
@@ -32,10 +33,10 @@ const About = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1'>
-            <h2 className='h2 text-accent'>WHo Am I?</h2>
+            <h2 className='h2 text-accent'>Who Am I?</h2>
             <h3 className='h3 mb-4'>I'm a Front-end Developer with over 1 years of experience.</h3>
             <p className='mb-6'>
-            Azkhal is an undergraduate student majoring in Information Systems at Gunadarma University who is highly dedicated and enthusiastic about the IT field. Have a strong interest in Web Development and Software Engineering. Actively pursue expertise in HTML, CSS, and JavaScript while learning how to create beautiful and relevant user interfaces. Learn Javascript frameworks like Reactjs and Vuejs consistently. Enthusiastic about UX Research and UI Design. Want to leverage skills to create dynamic and responsive web experiences. Passionate about applying knowledge to real-world situations through internship or project. Demonstrates excellent problem solving skills and a collaborative, searching mindset opportunities to contribute to innovative projects. Committed to always following the latest industry developments, and want to make a positive impact in this digital era.
+            Azkhal is an undergraduate student majoring in Information Systems at Gunadarma University who is highly dedicated and enthusiastic about the IT field. Have a strong interest in Web Development and Software Engineering. Actively pursue expertise in HTML, CSS, and JavaScript while learning how to create beautiful and relevant user interfaces. Learn Javascript frameworks like Reactjs and Vuejs consistently.
             </p>
 
             {/* start stats OPTIONAL */}
@@ -68,7 +69,7 @@ const About = () => {
             </div>
             {/* ends of stats OPTIONAL */}
 
-            <div className='flex gap-x-8 items-center'>
+            <div className='flex gap-x-8 top-0 items-center'>
               <form action='#contact'>
               <button className='btn btn-lg'>Contact me</button>
               </form>

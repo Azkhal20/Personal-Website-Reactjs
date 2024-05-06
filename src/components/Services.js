@@ -38,7 +38,7 @@ const Services = () => {
   return (
   <section className='section' id='services'>
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row justify-center items-center'>
+      <div className='flex flex-col lg:flex-row justify-center items-center lg:flex-wrap'>
 
         {/* text & image */}
         <motion.div 
@@ -46,7 +46,7 @@ const Services = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className='flex-1  mb-12 lg:mb-0'
+        className='flex-1 mb-12 lg:mb-0'
         > 
         {/* lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten */}
           <h2 className='h2 text-accent mb-6'>Experience.</h2>
@@ -70,7 +70,7 @@ const Services = () => {
               const {name, description, link} = service;
               return (
                 <div 
-                className='border-b border-white/20 h-[146px] mb-[38px] flex' 
+                className='border-b border-white/20 h-[146px] mb-[38px] flex lg:flex-col lg:flex-grow' 
                 key={index}
                 >
                   <div className='max-w-[476px]'>
