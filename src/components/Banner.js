@@ -54,7 +54,17 @@ const Banner = () => {
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7}} 
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-                Look deeper if you are interested in getting to know me! I'm open to talking about business and work.
+                <TypeAnimation 
+          sequence={[
+            'Look deeper if you are interested in getting to know me! Im open to talking about business and work.',
+            3000,
+            
+          ]} 
+            speed={80}
+            className='text-white'
+            wrapper='span'
+            repeat={Infinity}
+          />
               </motion.p>
           <motion.div 
           variants={fadeIn('up, 0.6')} 
@@ -106,3 +116,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+// Look deeper if you are interested in getting to know me! I'm open to talking about business and work.

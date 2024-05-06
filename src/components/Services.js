@@ -38,7 +38,7 @@ const Services = () => {
   return (
   <section className='section' id='services'>
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row justify-center items-center lg:flex-wrap'>
+      <div className='flex flex-col lg:flex-row justify-center items-center'>
 
         {/* text & image */}
         <motion.div 
@@ -70,7 +70,7 @@ const Services = () => {
               const {name, description, link} = service;
               return (
                 <div 
-                className='border-b border-white/20 h-[146px] mb-[38px] flex lg:flex-col lg:flex-grow' 
+                className='border-b border-white/20 h-[210px] mb-[40px] flex md:h-40 justify-center items-center'
                 key={index}
                 >
                   <div className='max-w-[476px]'>
@@ -82,11 +82,13 @@ const Services = () => {
                     </p>
                   </div>
                   <div className='flex flex-col flex-1 items-end'>
-                    <a href=''
-                    className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+                    <a href='' 
+                    className='btn w-9 h-9 mb-[42px] flex justify-center items-center'
+                    >
                       <BsArrowUpRight/> 
                     </a>
-                    <a href='#' className='text-gradient text-sm'>
+                    <a href='#' className='text-gradient text-sm'
+                    >
                       {link}
                       </a>
                   </div>
