@@ -2,7 +2,7 @@ import React from 'react';
 // images
 import Image from '../assets/about1.png';
 // icons
-import { FaGamepad, FaGithub, FaInstagram, FaLinkedin, FaMailBulk, FaMailchimp, FaMapPin, FaVoicemail, FaYoutube, FaGmail } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -56,7 +56,7 @@ const Banner = () => {
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
                 <TypeAnimation 
           sequence={[
-            'Look deeper if you are interested in getting to know me! Im open to talking about business and work.',
+            'Look deeper if you are interested in getting to know me! Dont let your inspiration wait! Whether its for a new project, feedback, or just to say hello, my contact is always open.',
             3000,
             
           ]} 
@@ -96,8 +96,8 @@ const Banner = () => {
             <a href='https://www.linkedin.com/in/azkhal-zavier/' target='blank'>
               <FaLinkedin />
             </a>
-            <a href='https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSMTFLMGQzDVxWPvvKXQRzfQRgTJkKVgbdWnqBXBfZhPWHFVgjfGwfntjtpqSLTqNbLlNlSM' target='blank'>
-              <FaMailBulk />
+            <a href='Https://wa.me/6281290475081?text=Saya%20selalu%20terbuka%20untuk%20diskusi%20baru!%20Klik%20di%20sini%20untuk%20menghubungi%20saya.' target='blank'>
+              <FaWhatsapp />
             </a>
           </motion.div>
         </div>

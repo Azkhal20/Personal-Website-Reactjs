@@ -46,7 +46,7 @@ const Services = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 mb-12 lg:mb-0'
+        className='flex-1 mb-2 lg:mb-0'
         > 
         {/* lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten */}
           <h2 className='h2 text-accent mb-6'>Experience.</h2>
@@ -82,7 +82,7 @@ const Services = () => {
                     </p>
                   </div>
                   <div className='flex flex-col flex-1 items-end'>
-                    <a href='' 
+                    <a href='#' 
                     className='btn w-9 h-9 mb-[42px] flex justify-center items-center'
                     >
                       <BsArrowUpRight/> 

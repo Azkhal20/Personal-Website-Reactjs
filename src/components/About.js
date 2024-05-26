@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section  id='about' ref={ref}>
       <div className='container mx-auto '>
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-38 h-screen'>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-38 h-screen py-[60px] lg:py-0 lg:px-[70px]'>
 
           {/* img */}
           {/* <motion.div 

@@ -4,9 +4,8 @@ import {motion} from 'framer-motion'
 // variants
 import {fadeIn} from '../variants'
 // img
-import Img1 from '../assets/portfolio-img1.png';
-import Img2 from '../assets/portfolio-img2.png';
-import Img3 from '../assets/portfolio-img3.png';
+import Img4 from '../assets/porto-1.png';
+import Img5 from '../assets/porto-2.png';
 
 const Work = () => {
   return (
@@ -18,7 +17,7 @@ const Work = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+          className='flex-1 flex flex-col gap-y-6 mb-14 lg:mb-0 lg:justify-center'>
             {/* text */}
             <div>
               <h2 className='h2 leading-tight text-accent'>
@@ -33,26 +32,26 @@ const Work = () => {
 
               {/* ------------ PROJECT 1 ------------ */}
               {/* image */}
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/* <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'> */}
                 {/* overlay */}
-                <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+                {/* <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div> */}
                 {/* img */}
-                <img 
+                {/* <img 
                   className='group-hover:scale-125 transition-all duration-500' 
-                  src={Img1} 
-                  alt=''
-                />
+                  src={Img4} 
+                  alt='vameratale website'
+                /> */}
                 {/* pretitle */}
-                <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                  <span className='text-gradient'>UI/UX Design</span>
-                  </div>
+                {/* <div className='absolute -bottom-full left-12 group-hover:bottom-32 transition-all duration-500 z-50'>
+                  <span className='text-gradient'>vameratale website</span>
+                  </div> */}
                 {/* title */}
-                <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                  <span className='text-3x1 text-white'>Project title</span>
+                {/* <div className='absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-50'>
+                  <span className='text-3x1 text-white'>Flower sales website. using Reactjs, Tailwind, vite.js</span>
                 </div>
-              </div>
-              {/* --------- END OF PROJECT 1 --------- */}
+              </div> */}
             </motion.div>
+              {/* --------- END OF PROJECT 1 --------- */}
 
             {/* ---- START OF PROJECT 2 & 3 ----- */}
             {/* ------------ PROJECT 2 ---------- */}
@@ -62,45 +61,44 @@ const Work = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-10'>
-              {/* image */}
-              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            {/* image */}
+            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* img */}
               <img 
                 className='group-hover:scale-125 transition-all duration-500' 
-                src={Img2} 
-                alt=''
+                src={Img4}
               />
               {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-[130px] transition-all duration-500 z-50'>
+                <span className='text-gradient text-2xl'>Vameratale Website</span>
                 </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3x1 text-white'>Project title</span>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-[90px] transition-all duration-700 z-50'>
+                <span className='text text-xl text-white'>Flower sales website. using Reactjs, Tailwind, vite.js</span>
               </div>
+            </div>
               {/* -------- END OF PROJECT 2 ------- */}
 
               {/* ------------ PROJECT 3 ---------- */}
-              </div>
-                {/* image */}
-                <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/* image */}
+              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
                 {/* overlay */}
                 <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
                 {/* img */}
                 <img 
                   className='group-hover:scale-125 transition-all duration-500' 
-                  src={Img3} 
+                  src={Img5} 
                   alt=''
                 />
                 {/* pretitle */}
-                <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                  <span className='text-gradient'>UI/UX Design</span>
+                <div className='absolute -bottom-full left-12 group-hover:bottom-[150px] transition-all duration-500 z-50'>
+                  <span className='text-gradient text-2xl'>UI/UX Design Aisa Clean Laundry</span>
                   </div>
                 {/* title */}
-                <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                  <span className='text-whute text-3xl'>Project title</span>
+                <div className='absolute -bottom-full left-12 group-hover:bottom-[70px] transition-all duration-700 z-50'>
+                  <span className='text-white text-xl'>Website design for ordering laundry services from Aisa Clean Laundry using Figma.</span>
                 </div>
               </div>
               {/* ------ END OF PROJECT 3 ------*/}
