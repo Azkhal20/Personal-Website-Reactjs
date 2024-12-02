@@ -1,0 +1,75 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - feature/**
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout code dari repository
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Install Node.js dan dependencies
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Install Dependencies
+      run: npm install
+
+    # Jalankan pengujian
+    - name: Run Tests
+      run: npm test -- --watchAll=false
+
+  dockerize:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    # Checkout code dari repository
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Setup Docker Buildx
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    # Login ke Docker Hub
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    # Build dan push Docker image
+    - name: Build and Push Docker Image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        file: Dockerfile
+        push: true
+        tags: ${{ secrets.DOCKER_USERNAME }}/portfolio:latest
+
+---
+
+### **3. Isi File `Header.test.js`**
+File ini adalah pengujian untuk komponen `Header.js` menggunakan **Jest**. Simpan file ini di **`src/components/__tests__/Header.test.js`**.
+
+#### File `Header.test.js`:
+```javascript
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import Header from '../Header';
+
+test('renders the Work with me button', () => {
+  render(<Header />);
+  const buttonElement = screen.getByText(/Work with me/i);
+  expect(buttonElement).toBeInTheDocument();
+});

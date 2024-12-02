@@ -20,7 +20,7 @@ const Nav = () => {
           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
           >
             <BiHomeAlt />
-          </Link>
+          </Link> 
           <Link 
           to='about'
           activeClass='active'
