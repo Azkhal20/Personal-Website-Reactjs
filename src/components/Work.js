@@ -27,7 +27,9 @@ const Work = () => {
               <p className='max-w-sm mb-6'>The projects that I have worked on are upholding my commitment to completing every challenge.
               </p>
               <h2 className='h3'>Interested in seeing more?</h2>
-              <button className='btn btn-sm'>View all projects</button>
+              <button className='btn btn-sm'>
+                <a href='/Portfolio_Azkhal Zavier.pdf' download="Portfolio_Azkhal Zavier.pdf" className='btn-link'>See More</a>
+              </button>
             </div>
 
               {/* ------------ PROJECT 1 ------------ */}

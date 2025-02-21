@@ -31,39 +31,40 @@ const About = () => {
           variants={fadeIn('left', 0.5)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.5 }}
           className='flex-1'>
             <h2 className='h2 text-accent'>Who Am I?</h2>
-            <h3 className='h3 mb-4'>I'm a Front-end Developer with over 1 years of experience.</h3>
+            <h3 className='h3 mb-4'>I'm a Front-end Developer with over 2 years of experience.</h3>
             <p className='mb-6'>
-            Azkhal is an undergraduate student majoring in Information Systems at Gunadarma University who is highly dedicated and enthusiastic about the IT field. Have a strong interest in Web Development and Software Engineering. Actively pursue expertise in HTML, CSS, and JavaScript while learning how to create beautiful and relevant user interfaces. Learn Javascript frameworks like Reactjs and Vuejs consistently.
+            Azkhal is an undergraduate student majoring in Information Systems at Gunadarma University who is highly dedicated and enthusiastic about the IT field. Have a strong interest in Web Development and Software Engineering. Actively pursue expertise in HTML, CSS, and JavaScript while learning how to create beautiful and relevant user interfaces. Learn Javascript frameworks like Reactjs and Nextjs consistently.
             </p>
 
-            {/* start stats OPTIONAL */}
               <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
                 <div>
                   <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                    {inView ? <CountUp start={0} end={21} duration={3}/> : null}
+                    {inView ? <CountUp start={0} end={4} duration={3}/> : null}
+                    +
                   </div>
                   <div className='font-primary text-sm tracking-[2px]'>
-                    Years <br />Old
+                    Years of<br />Experience
                   </div>
               </div>
                 <div>
                   <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                    {inView ? <CountUp start={0} end={252} duration={3}/> : null}
+                    {inView ? <CountUp start={0} end={50} duration={3}/> : null}
+                  +
                   </div>
                   <div className='font-primary text-sm tracking-[2px]'>
-                    Month
+                    Complete <br />Projects
                   </div>
               </div>
                 <div>
                   <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                    {inView ? <CountUp start={0} end={7} duration={3}/> : null}
-                    k+
+                    {inView ? <CountUp start={0} end={999} duration={3}/> : null}
+                    +
                   </div>
                   <div className='font-primary text-sm tracking-[2px]'>
-                    Days
+                  Cup of <br />Coffe
                   </div>
               </div>
             </div>
@@ -73,8 +74,8 @@ const About = () => {
               <form action='#contact'>
               <button className='btn btn-lg'>Contact me</button>
               </form>
-              <a href='#work' className='text-gradien btn-link'>
-                My Portfolio
+              <a href='/CV_Azkhal Zavier.pdf' download="CV_Azkhal Zavier.pdf" className='text-gradient btn-link'>
+                Curriculum Vitae
               </a>
             </div>
           </motion.div>

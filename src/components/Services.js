@@ -9,21 +9,21 @@ import { fadeIn } from '../variants'
 // services data
 const services = [
   {
-    name : 'Independent Study Fullstack MEVN @codepolitan',
+    name : 'Mentee Fullstack Software Development @Productzilla',
     description: 
-    'Fullstack Javascript Scholarship. Studying with industry experts with proven experience.',
+    'Independent Study Program from Kampus Merdeka Batch 7',
     link: 'Learn more',
   },
   {
     name : 'Mentee Web Developer & UI/UX Design @Infinite Learning',
     description: 
-    'Independent Study Program from Kampus Merdeka',
+    'Independent Study Program from Kampus Merdeka Batch 6',
     link: 'Learn more',
   },
   {
-    name : 'Game Developer @Tax Center Gunadarma University',
+    name : 'Fullstack Web Developer @Tax Center Gunadarma University',
     description: 
-    'Took part in a competition from Diktjenpajakri to make educational games for young children with a tax theme.',
+    'Given responsibility for maintaining the tax center website to update the appearance, data and content regularly.',
     link: 'Learn more',
   },
   // {
